@@ -14,7 +14,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 body {
-  background-image: url(images/rlgbg.png);
+  background-image: url(../images/rlgbg.png);
 }
 
 img {
@@ -30,12 +30,12 @@ img {
 h1 {
   text-align: right;
   padding: 10% 5% 10% 0;
-  color: #4e748b; 
-  font-style: italic; 
-  font-size: 4.2vw;
-  font-family: Georgia, Helvetica, Sans-Serif;
-  text-shadow: 1px 1px #0C2C52, 2px 2px #0C2C52, 3px 3px #0C2C52;
-  background: url('images/bannerimg2.png'), url('images/RLGlogo3.png');
+  color: #4e748b;  
+  font-size: 5.5vw;
+  font-family: 'Lobster Two', Helvetica, sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 0px #0C2C52, 4px 4px 0px rgba(0,0,0,0.15);
+  background: url('../images/bannerimg2.png'), url('../images/RLGlogo3.png');
   background-position: right, left;
   background-repeat: no-repeat, no-repeat;
   background-size: contain, contain;
@@ -44,23 +44,26 @@ h1 {
 h2 { 
   font-size: 2.5em;
   text-align: center;
-  color: #3f596a; font: bold italic 30px Georgia, Helvetica, Sans-Serif;
-  text-shadow: 1px 1px #98b1c0, 2px 2px #98b1c0, 2px 2px #98b1c0;
+  color: #3f596a; 
+  text-shadow: 1px 1px 0px #0C2C52, 4px 4px 0px rgba(0,0,0,0.15);
+  font-family: 'Lobster Two', cursive;
+  font-weight: 400;
     }
 
 
 h3 {
-  font-size: 1.5em;
-  font-family: Georgia;
+  font-size: 2em;
   color: #678ca4;
-  font-style: italic;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 400;
   letter-spacing: 1px;
   border-bottom: 1px solid #3f596a;
 }
 
 h4 {
   font-size: 1em;
-  font-family: Georgia;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 400;
   color: #678ca4;
   letter-spacing: 1px;
   border-bottom: 1px solid #3f596a;
@@ -68,14 +71,14 @@ h4 {
 
 p {
   font-size: 1.2em;
-  color: #0C2C52;
-  font-family: Georgia;
+  color: #242424;
+  font-family: 'Raleway', sans-serif;
 }
 
 .textBanner {
   background-color: #D3DEE6;
   border-radius: 20px;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #B4C6D1;
 }
 
 /* Navigation START */
@@ -89,7 +92,7 @@ p {
   background-color: #D3DEE6;
   z-index: 7;
   border-radius: 20px;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #B4C6D1;
   margin-top: 2%;
 }
 
@@ -121,6 +124,7 @@ p {
   position: relative;
   font-size: 1.5em;
   z-index: 9;
+  font-family: 'Raleway', sans-serif;
 }
 
 li.slider, .firstActive {
@@ -221,12 +225,44 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 
 .firstPanelContent {
   padding: 0 2%;
+  text-align: center;
+}
+
+.flexslider .slides li {
+    position:relative;
+}
+
+.flex-caption {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(180,198,209, 0.8);    
+  z-index:1;
+  padding:5px;
+}
+
+.firstPanelContent p {
+  text-align: left;
+}
+
+.firstPanelContent img {
+  margin: 1% auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.firstPanelContent a {
+  text-decoration: none;
+  color: #0C2C52;
+  font-family: Georgia;
+  font-size: 0.9em;
 }
 
 /* SECOND PANEL INFO HERE */
 
 .secondPanel {
-  padding: 0 2%;
+  padding: 0 1%;
 }
 
 .secondPanel a {
