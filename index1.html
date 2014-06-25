@@ -22,8 +22,25 @@
 	});
 </script>
 
+
+
 <body>
+<input type="checkbox" id="toggle" name="toggle" class="toggle">
 	<div class="wrapper">
+		<nav class="headerNav">	
+	  	<ul> 
+	    <li><a href="#">Home</a></li>
+	    <li><a href="#">News</a></li>
+	    <li><a href="#">FAQ</a></li>
+	    <li><a href="#">Our Clan</a></li>
+	    <li><a href="#">Available</a></li>
+	    <li><a href="#">Contact Us</a></li>
+	    <label for="toggle"><span class="hamburger">☰</span></label>
+	  	</ul>
+	</nav>
+
+	<img src="images/RLGlogo3.png" class="logoMobile" alt="">
+
 		<div class="textBanner">
 			<h1><strong>Rock Lake Gerbils</strong></h1>
 		</div>
@@ -117,13 +134,46 @@
 
 			<img src="images/tinyger1.png">	
 		</div>
-		
+
+		<!----- MEDIA QUERY DIVS ------>
+
+		<div class="thirdPanel">
+			<div class="thirdPanelContainer">
+			<h3>Affiliations</h3>			
+				<a href="http://agsgerbils.org/"><img src="images/agstrans.png" alt="Two gerbils peeking out of a red circle with the words American Gerbil Society.">American Gerbil Society</a>
+			</div>
+
+			<div class="thirdPanelContainer">
+			<h3>Breeders</h3>
+				<div class="breeders">
+				<a href="http://www.caledoniagerbils.com"><img src="images/cctrans.png" alt="Logo of a cartoon gerbil in a yellow circle with the words Caledonia Clan Gerbils in the circle">Caledonia Clan Gerbils, Toronto</a>
+				</div>
+				<div class="breeders">
+				<a href="http://gerbilnation.wix.com/home"><img src="images/gntrans.png" alt="">Gerbil Nation, Vaughan</a>
+				</div>
+				<div class="breeders">
+				<a href="http://furrytalewarriors.wix.com/home"><img src="images/ftwtrans.png" alt="">Furry Tail Warriors, Georgetown</a>
+				</div>
+			</div>
+
+
+			<div class="thirdPanelContainer">
+			<h3>Supplies</h3>
+			<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
+			</div>
+		</div>
+
+		<!--- MEDIA QUERY DIVS END ---->
 		<footer class="footerText">
+
 			<p>All images are &#169; Rock Lake Gerbils unless otherwise stated. Please do not use without permission.</p>
 
 			<p>Design &#169; <a href="mailto:fiona@feeona.ca">Fiona Martin</a> & Dana Halbert. Coded with &#9829; by <a href="mailto:fiona@feeona.ca">Fiona Martin</a></p>
+
 		</footer>
+
 	</div>
+
 
 	<script>$('body').flowtype();</script>
 </body>

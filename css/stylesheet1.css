@@ -13,8 +13,13 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
    clear: both;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-image: url(../images/rlgbg.png);
+  height: 100%;
 }
 
 img {
@@ -25,6 +30,11 @@ img {
   padding: 0 15%;
   margin: 2% auto;
   width: 100%;
+  -webkit-transition: all 0.5s;
+}
+
+.toggle, label {
+  display: none;
 }
 
 h1 {
@@ -35,10 +45,14 @@ h1 {
   font-family: 'Lobster Two', Helvetica, sans-serif;
   font-weight: 700;
   text-shadow: 1px 1px 0px #0C2C52, 4px 4px 0px rgba(0,0,0,0.15);
-  background: url('../images/bannerimg2.png'), url('../images/RLGlogo3.png');
+  background-image: url('../images/bannerimg2.png'), url('../images/RLGlogo3.png');
   background-position: right, left;
   background-repeat: no-repeat, no-repeat;
   background-size: contain, contain;
+}
+
+.logoMobile {
+  display:none;
 }
 
 h2 { 
@@ -82,6 +96,10 @@ p {
 }
 
 /* Navigation START */
+
+.headerNav {
+  display: none;
+}
 
 .menu {
   list-style: none;
@@ -277,7 +295,7 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 
 /* SECOND PANEL INFO HERE */
 
-.secondPanel a, .footerText a {
+.secondPanel a, .footerText a, .thirdPanel a, .headerNav a {
   color: #242424; 
   text-decoration: none;
   margin: 2% 0;
@@ -293,16 +311,208 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   padding: 0 15%;
 }
 
+.thirdPanel {
+  display: none;
+}
+
 /* FOOTER IS HERE */
 
 .footerText {
   clear: both;
   font-size: 0.7em;
   text-align: center;
+  margin: 2% 0;
 }
 
 /* MEDIA QUERIES ARE HERE */
 
-@media  {
+@media screen and (max-width: 840px) {
+
+  .firstPanel {
+    background: #f7f7f7;
+    width: 100%;
+    margin-bottom: 2%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .secondPanel {
+   display: none;
+  }  
+
+  .wrapper {
+    padding: 0;
+    position: relative;
+  }
+
+  .thirdPanel {
+    overflow: hidden;
+    margin-top: 2%;
+    display: block;
+    width: 100%;
+    background: #f7f7f7;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+  }
   
+  .thirdPanelContainer {
+    padding: 0 5%;
+    width: 33.3%;
+    float: left;
+  }
+
+  .thirdPanelImgs a {
+    margin: 5% 0;
+  }
+
+  .breeders {
+    margin: 15% 0;
+  }
 }
+
+@media screen and (max-width: 680px) {
+
+  .menu {
+    display: none;
+  }
+
+  .textBanner {
+    margin: 2% 0;
+    border-radius: 0px;
+  }
+
+  /* HAMBURGER MENU START */
+
+  .wrapper {
+    top: -420px;
+    margin: 0;
+  }
+
+  nav.headerNav {
+    display: block;
+  }
+
+  .firstPanel {
+    border-radius: 0px;
+  }
+
+  .thirdPanel {
+    border-radius: 0px;
+  }
+
+  .headerNav ul {
+    width:100%;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    padding-bottom: 15%;
+    z-index: 44;
+    background: #D3DEE6;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    border-top: none;
+  }
+
+  .headerNav ul li { 
+    display:inline-block;
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
+  .headerNav ul li a {
+    text-align:center;
+    padding: 20px 0;
+    display:block;
+    font-size: 2em;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
+  }
+
+  .headerNav ul li a {
+    margin: 0;
+  }
+
+  .headerNav ul li a:hover { 
+    background:#B4C6D1;
+    color: #4E748B;
+  }
+
+    input[type=checkbox]:checked ~ .wrapper {
+      top: 0px;
+      position: relative;
+      display: block;
+    }
+
+    label[for="toggle"]{
+      float: left;
+      display: block;
+      margin-top: 20px;
+    }
+
+    .hamburger {
+      font-size: 2.5em;
+      color: #4E748B;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+
+  .headerNav ul {
+    padding-bottom: 22%;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 5% 0 5% 0;  
+    font-size: 12vw;
+    background-image: none !important;
+  }
+
+  .logoMobile {
+    display: block;
+  }
+
+  .flex-caption {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-12px;
+    background: rgba(180,198,209, 0.6);    
+    z-index:1;
+    padding: 0;
+  }
+  
+  .firstPanelContent img {
+    border-radius: 0;
+  }
+
+  div.flexslider {
+    margin-bottom: 20%;
+  }
+
+  .thirdPanelContainer {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
+  .thirdPanelContainer img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .breeders {
+    margin-bottom: 1%;
+  }
+
+}
+
+
+

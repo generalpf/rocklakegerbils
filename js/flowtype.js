@@ -17,7 +17,7 @@
 // ====================================
       var settings = $.extend({
          maximum   : 1400,
-         minimum   : 700,
+         minimum   : 1000,
          fontRatio : 80
       }, options),
 
