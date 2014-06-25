@@ -3,23 +3,26 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
-
-.clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
 }
 
-html {
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+html, body {
   height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 body {
   background-image: url(../images/rlgbg.png);
-  height: 100%;
 }
 
 img {
@@ -33,8 +36,91 @@ img {
   -webkit-transition: all 0.5s;
 }
 
-.toggle, label {
+ul.expanded {
+  padding-left: 0;
+  z-index: 44;
+  margin-top: 0;
+}
+
+#nav-trigger {
   display: none;
+  text-align: center; 
+}
+
+#nav-trigger span {
+  display: inline-block;
+  width: 100%;
+  background-color: #D3DEE6;
+  color: #242424;
+  cursor: pointer;
+  font-size: 2.5em;
+  padding: 10px;
+  border-bottom: solid 1px #fff;
+}
+
+#nav-trigger span:after {
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 10px;
+  content: "";
+  border-left: solid 10px transparent;
+  border-top: solid 10px #242424;
+  border-right: solid 10px transparent; 
+}
+
+#nav-trigger span:hover {
+  background-color: #97AAB6; 
+}
+#nav-trigger span.open:after {
+  border-left: solid 10px transparent;
+  border-top: none;
+  border-bottom: solid 10px #fff;
+  border-right: solid 10px transparent; 
+}
+
+nav#nav-main {
+  display: none;
+}
+
+nav#nav-mobile {
+  position: relative;
+  display: none; 
+}
+
+nav#nav-mobile ul {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #D3DEE6;
+}
+
+nav#nav-mobile li {
+  display: block;
+  margin: 0 5px;
+}
+
+nav#nav-mobile li:last-child {
+  border-bottom: none; 
+}
+
+nav#nav-mobile a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  display: block;
+  color: #0C2C52;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+nav#nav-mobile a:hover {
+  background-color: #0B2B52;
+  color: #fff; 
 }
 
 h1 {
@@ -62,7 +148,7 @@ h2 {
   text-shadow: 1px 1px 0px #0C2C52, 4px 4px 0px rgba(0,0,0,0.15);
   font-family: 'Lobster Two', cursive;
   font-weight: 400;
-    }
+}
 
 
 h3 {
@@ -229,6 +315,9 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   margin-bottom: 2%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: relative;
+  z-index: 1; /* needed for setting pseudo-element z-index */
+  backface-visibility: hidden;
 }
 
 .secondPanel {
@@ -243,6 +332,7 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   border-bottom-left-radius: 20px;
 }
 
+
 /* FIRST PANEL INFO HERE */
 
 .firstPanelContent {
@@ -251,7 +341,7 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 }
 
 .flexslider .slides li {
-    position:relative;
+  position:relative;
 }
 
 .flex-caption {
@@ -282,11 +372,49 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   border-radius: 0px;
 }
 
-.firstPanelContent a {
+.firstPanelText a {
   text-decoration: none;
-  color: #0C2C52;
-  font-size: 0.9em;
+  color: #242424;
+  font-size: 1em;
+  font-weight: bold;
   font-family: 'Raleway', sans-serif;
+  outline: none;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.firstPanelText a::before,
+.firstPanelText a::after {
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+.firstPanelText a::before {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: -1;
+  box-sizing: content-box;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #D3DEE6;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.firstPanelText a:hover::before,
+.firstPanelText a:focus::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .firstPanelText {
@@ -295,7 +423,7 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 
 /* SECOND PANEL INFO HERE */
 
-.secondPanel a, .footerText a, .thirdPanel a, .headerNav a {
+.secondPanel a, .footerText a, .thirdPanel a, .headerNav a, .AGSbanner a {
   color: #242424; 
   text-decoration: none;
   margin: 2% 0;
@@ -326,14 +454,14 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 
 .footerText {
   clear: both;
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-align: center;
   margin: 2% 0;
 }
 
 /* MEDIA QUERIES ARE HERE */
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
 
   h1 {
     font-size: 7.7vw;
@@ -348,7 +476,7 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   }
 
   .secondPanel {
-   display: none;
+    display: none;
   }  
 
   .wrapper {
@@ -368,7 +496,7 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
     border-top-left-radius: 20px;
     text-align: center;
   }
-  
+
   .thirdPanelContainer {
     padding: 0 5%;
     width: 33.3%;
@@ -386,6 +514,10 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 
 @media screen and (max-width: 680px) {
 
+  .wrapper {
+    margin: 0;
+  }
+
   .menu {
     display: none;
   }
@@ -397,133 +529,73 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 
   /* HAMBURGER MENU START */
 
-  .wrapper {
-    top: -420px;
-    margin: 0;
-  }
+  #nav-trigger {
+    display: block; }
 
-  nav.headerNav {
-    display: block;
-  }
+    nav#nav-mobile {
+      display: block; } 
 
-  .firstPanel {
-    border-radius: 0px;
-  }
+      .firstPanel {
+        border-radius: 0px;
+      }
 
-  .thirdPanel {
-    border-radius: 0px;
-  }
+      .thirdPanel {
+        border-radius: 0px;
+        position: relative;
+      }
 
-  .headerNav ul {
-    width:100%;
-    margin:0;
-    padding:0;
-    list-style:none;
-    text-align:center;
-    padding-bottom: 15%;
-    z-index: 44;
-    background: #D3DEE6;
-    border-radius: 0px;
-    border: 1px solid #fff;
-    border-top: none;
-  }
-
-  .headerNav ul li { 
-    display:inline-block;
-    width: 100%;
-    margin:0;
-    padding:0;
-  }
-  .headerNav ul li a {
-    text-align:center;
-    padding: 20px 0;
-    display:block;
-    font-size: 2em;
-    transition: background .25s ease-in-out;
-    -moz-transition: background .25s ease-in-out;
-    -webkit-transition: background .25s ease-in-out;
-  }
-
-  .headerNav ul li a {
-    margin: 0;
-  }
-
-  .headerNav ul li a:hover { 
-    background:#B4C6D1;
-    color: #4E748B;
-  }
-
-    input[type=checkbox]:checked ~ .wrapper {
-      top: 0px;
-      position: relative;
-      display: block;
     }
 
-    label[for="toggle"]{
-      float: left;
-      display: block;
-      margin-top: 20px;
+    @media screen and (max-width: 420px) {
+
+
+
+      h1 {
+        text-align: center;
+        padding: 5% 0 5% 0;  
+        font-size: 12vw;
+        background-image: none;
+      }
+
+      .logoMobile {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .flex-caption {
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:-12px;
+        background: rgba(180,198,209, 0.6);    
+        z-index:1;
+        padding: 0;
+      }
+
+      .firstPanelContent img {
+        border-radius: 0;
+      }
+
+      div.flexslider {
+        margin-bottom: 20%;
+      }
+
+      .thirdPanelContainer {
+        width: 100%;
+        margin-bottom: 2%;
+      }
+
+      .thirdPanelContainer img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .breeders {
+        margin-bottom: 1%;
+      }
+
     }
 
-    .hamburger {
-      font-size: 2.5em;
-      color: #4E748B;
-      border-radius: 10px;
-      padding: 10px;
-    }
+
+
     
-}
-
-@media screen and (max-width: 420px) {
-
-  .headerNav ul {
-    padding-bottom: 22%;
-  }
-
-  h1 {
-    text-align: center;
-    padding: 5% 0 5% 0;  
-    font-size: 12vw;
-    background-image: none !important;
-  }
-
-  .logoMobile {
-    display: block;
-  }
-
-  .flex-caption {
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:-12px;
-    background: rgba(180,198,209, 0.6);    
-    z-index:1;
-    padding: 0;
-  }
-  
-  .firstPanelContent img {
-    border-radius: 0;
-  }
-
-  div.flexslider {
-    margin-bottom: 20%;
-  }
-
-  .thirdPanelContainer {
-    width: 100%;
-    margin-bottom: 2%;
-  }
-
-  .thirdPanelContainer img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .breeders {
-    margin-bottom: 1%;
-  }
-
-}
-
-
-
