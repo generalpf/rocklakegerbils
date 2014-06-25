@@ -275,7 +275,7 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 }
 
 .AGSbanner {
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .AGSbanner img {
@@ -315,6 +315,13 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   display: none;
 }
 
+.iframestyle {
+  border: none;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+}
+
 /* FOOTER IS HERE */
 
 .footerText {
@@ -327,6 +334,10 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
 /* MEDIA QUERIES ARE HERE */
 
 @media screen and (max-width: 840px) {
+
+  h1 {
+    font-size: 7.7vw;
+  }
 
   .firstPanel {
     background: #f7f7f7;
