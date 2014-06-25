@@ -78,7 +78,7 @@ p {
 .textBanner {
   background-color: #D3DEE6;
   border-radius: 20px;
-  border: 1px solid #B4C6D1;
+  border: 1px solid #fff;
 }
 
 /* Navigation START */
@@ -92,7 +92,7 @@ p {
   background-color: #D3DEE6;
   z-index: 7;
   border-radius: 20px;
-  border: 1px solid #B4C6D1;
+  border: 1px solid #fff;
   margin-top: 2%;
 }
 
@@ -208,17 +208,21 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   background: #f7f7f7;
   width: 70%;
   float: left;
+  margin-bottom: 2%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 .secondPanel {
+  padding: 0 1%;
   background: #f7f7f7;
   width: 30%;
   float: left;
+  margin-bottom: 2%;
+  text-align: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 /* FIRST PANEL INFO HERE */
@@ -252,20 +256,53 @@ ul li a.firstActive, ul li a.active, ul li a.lastActive {
   border-radius: 20px;
 }
 
+.AGSbanner {
+  margin: 10% 0;
+}
+
+.AGSbanner img {
+  border-radius: 0px;
+}
+
 .firstPanelContent a {
   text-decoration: none;
   color: #0C2C52;
-  font-family: Georgia;
   font-size: 0.9em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.firstPanelText {
+  padding: 0 2%;
 }
 
 /* SECOND PANEL INFO HERE */
 
-.secondPanel {
-  padding: 0 1%;
+.secondPanel a, .footerText a {
+  color: #242424; 
+  text-decoration: none;
+  margin: 2% 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-.secondPanel a {
-  color: #0C2C52; 
-  text-decoration: none;
+.secondPanel img {
+  padding: 5%;
+}
+
+.secondPanelImgs {
+  margin: 10% 0;
+  padding: 0 15%;
+}
+
+/* FOOTER IS HERE */
+
+.footerText {
+  clear: both;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+/* MEDIA QUERIES ARE HERE */
+
+@media  {
+  
 }
