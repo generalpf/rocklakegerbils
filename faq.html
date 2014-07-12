@@ -12,28 +12,33 @@
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/flowtype.js"></script>
-
+	<script src="js/smooth-scroll.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#nav-mobile").html($("#nav-main").html());
+			$("#nav-trigger span").click(function(){
+				if ($("nav#nav-mobile ul").hasClass("expanded")) {
+					$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+					$(this).removeClass("open");
+				} else {
+					$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+					$(this).addClass("open");
+				}
+			});
+			smoothScroll.init({
+				speed: 1000,
+				easing: 'easeInOutCubic',
+				offset: 0,
+				updateURL: false,
+				callbackBefore: function ( toggle, anchor ) {},
+				callbackAfter: function ( toggle, anchor ) {}
+			});
+			$('body').flowtype();
+		});
+	</script>
 </head>
 
-<script>
-	$(document).ready(function(){
-		$("#nav-mobile").html($("#nav-main").html());
-		$("#nav-trigger span").click(function(){
-			if ($("nav#nav-mobile ul").hasClass("expanded")) {
-				$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-				$(this).removeClass("open");
-			} else {
-				$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-				$(this).addClass("open");
-			}
-		});
-	});
-</script>
-
-
 <body>
-<script></script>
-
 	<div class="wrapper clearfix">
 
 		<div id="nav-trigger">
@@ -76,17 +81,16 @@
 
 				<nav>
 					<ul class="menu faqMenu">
-					<li><a href="#habitat">Habitat</a></li>
-					<li><a href="#food">Food</a></li>
-					<li><a href="#habits">Habits</a></li>
-					<li><a href="#care">Care</a></li>
-					<li><a href="#general">General</a></li>
-					<li><a href="#adoptions">Adoptions</a></li>
-					<li class="slider"></li>
-				</ul>
-			</nav>
-				
-				
+						<li><a data-scroll href="#habitat">Habitat</a></li>
+						<li><a data-scroll href="#food">Food</a></li>
+						<li><a data-scroll href="#habits">Habits</a></li>
+						<li><a data-scroll href="#care">Care</a></li>
+						<li><a data-scroll href="#general">General</a></li>
+						<li><a data-scroll href="#adoptions">Adoptions</a></li>
+						<li class="slider"></li>
+					</ul>
+				</nav>
+								
 				<section class="ac-container">
 				    <div id="habitat">
 				        <input id="ac-1" name="accordion-1" type="checkbox" />
@@ -381,13 +385,9 @@
 							<p>We will offer a ‘gerbil sitting’ service for free to our adopters. Just bring your gerbils in their habitat with their food and we will happily look after them for you. </p>
 				        </article>
 				    </div>
-				    <div><!--...--></div>
 				</section>
 
-				<a href="#goToTop" class="goToTop"> Go to top </a>
-				
-				
-
+				<a data-scroll href="#goToTop" class="goToTop"> Go to top </a>
 			</div>
 		</div>
 
@@ -425,7 +425,7 @@
 			</div>
 		</div>
 
-		<!----- MEDIA QUERY DIVS ------>
+		<!-- MEDIA QUERY DIVS -->
 
 		<div class="thirdPanel">
 			<div class="thirdPanelContainer">
@@ -451,32 +451,20 @@
 				</div>
 			</div>
 
-
 			<div class="thirdPanelContainer">
 				<h3>Supplies</h3>
 				<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
 			</div>
-
-
 		</div>
 
-		<!--- MEDIA QUERY DIVS END ---->
+		<!-- MEDIA QUERY DIVS END -->
 
 	</div>
 
 	<footer class="footerText">
-
 		<p>All images are &#169; Rock Lake Gerbils unless otherwise stated. Please do not use without permission.</p>
-
 		<p>Design &#169; <a href="mailto:fiona@feeona.ca">Fiona Martin</a> & Dana Halbert. Coded with &#9829; by <a href="mailto:fiona@feeona.ca">Fiona Martin</a></p>
-
 	</footer>
-
-<script>$('body').flowtype();</script>
-
-
-
 </body>
-
-
 </html>
+
