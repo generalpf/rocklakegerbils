@@ -12,6 +12,7 @@
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/flowtype.js"></script>
+	<script src="js/smooth-scroll.js"></script>
 
 </head>
 
@@ -26,6 +27,14 @@
 				$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
 				$(this).addClass("open");
 			}
+		});
+		smoothScroll.init({
+			speed: 1000,
+			easing: 'easeInOutCubic',
+			offset: 0,
+			updateURL: false,
+			callbackBefore: function ( toggle, anchor ) {},
+			callbackAfter: function ( toggle, anchor ) {}
 		});
 	});
 </script>
@@ -384,7 +393,7 @@
 				    <div><!--...--></div>
 				</section>
 
-				<a href="#goToTop" class="goToTop"> Go to top </a>
+				<a data-scroll href="#goToTop" class="goToTop"> Go to top </a>
 				
 				
 
@@ -480,3 +489,4 @@
 
 
 </html>
+
