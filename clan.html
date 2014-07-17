@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Rock Lake Gerbils - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/RLGSS.css">
+	<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/flexslider.css">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="description" content="The home page for Rock Lake Gerbils, which provides opening information about what the website is about.">
+	<link rel="shortcut icon" href="rlgico.ico">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400|Raleway|Lobster+Two:700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/flowtype.js"></script>
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+</head>
+<script>
+	$(document).ready(function(){
+		$("#nav-mobile").html($("#nav-main").html());
+		$("#nav-trigger span").click(function(){
+			if ($("nav#nav-mobile ul").hasClass("expanded")) {
+				$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+				$(this).removeClass("open");
+			} else {
+				$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+				$(this).addClass("open");
+			}
+		});
+	});
+</script>
+
+<body>
+
+	<div class="wrapper clearfix">
+
+		<div id="nav-trigger">
+			<span>menu</span>
+		</div>
+		<nav id="nav-main">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="clan.html">Our Clan</a></li>
+				<li><a href="available.html">Available</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<nav id="nav-mobile"></nav>
+
+		<img src="images/RLGlogo3.png" class="logoMobile" alt="">
+
+		<div class="textBanner">
+			<h1><strong>Rock Lake Gerbils</strong></h1>
+		</div>
+
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="clan.html" class="active">Our Clan</a></li>
+				<li><a href="available.html">Available</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li class="slider"></li>
+			</ul>
+		</nav>
+
+		<div class="firstPanel">
+			<div class="firstPanelContent">
+
+				<h2>Our Clan</h2>
+
+				<ul class="weeMenu">
+					<li class="active2"><a id="newboxes2" href="javascript:slideonlyone('newboxes2');" >Breeders</a></li>
+					<li><a id="newboxes1" href="javascript:slideonlyone('newboxes1');" >Pets</a></li>
+					
+				</ul>
+
+
+				<div class="newboxes2" id="newboxes1" style="display: none;">
+
+					<div class="mainGerbilInfo" id="mainGerbilInfo">
+							<a id="gerbilInfo" href="gerbils/pebble1.png" data-fancybox-title="<h5>Pied Black</h5> <p>Born January 2nd 2013 to CC Tseng &amp; CC Elena</p>">
+						<div class="tucked-corners girl-corners">	
+								<span class="pebble" ></span>
+						</a>
+						<h4>CC Pebble</h4>
+
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+							<a id="gerbilInfo" href="gerbils/pixie1.png" data-fancybox-title="<h5>Pied Golden Agouti</h5>.<p>Born January 2nd 2013 to CC Tseng &amp; CC Elena</p>">
+							<div class="tucked-corners girl-corners">	
+								<span class="pixie"></span>
+						</a>
+						<h4>CC Pixie</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/casper1.png" data-fancybox-title="<h4>Lilac</h4><p> Born April 3rd 2013 to CC MS Vin Diesel &amp; CC MS The Wife</p>"><span class="casper"></span>
+						</a>
+						<h4>CC MS Casper</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/dallas1.png" data-fancybox-title="<h4>Pied Argente Golden</h4><p> Born April 1st 2013 to Nibblet &amp; Cutie-Soft</p>"><span class="dallas"></span>
+						</a>
+						<h4>CC MS Dallas</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/cloud1.png" data-fancybox-title="<h4>Pied Dove</h4> <p>Born July 24th 2013 to CC Qo’nos &amp; CC Lily</p>"><span class="cloud"></span>
+						</a>
+						<h4>CC Cloud</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/cayden1.png" data-fancybox-title="<h4>Spot Siamese</h4><p> Born January 18th 2014 to CC Cloud &amp; MS Athena</p>"><span class="cayden"></span>
+						</a>
+						<h4>RL MS CC Cayden</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/brady1.png" data-fancybox-title="<h4>Black</h4><p> Born April 3rd 2013 to CC MS Vin Diesel &amp; CC MS The Wife</p>"><span class="brady"></span>
+						</a>
+						<h4>CC MS Brady</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/fievel1.png" data-fancybox-title="<h4>Golden Agouti</h4><p> Born March 2nd 2014 to CC MS Brady &amp; MS Elora</p>"><span class="fievel"></span>
+						</a>
+						<h4>RL MS CC Fievel</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/elora1.png" data-fancybox-title="<h5>Topaz</h5><p> Born April 16th 2013 to MS &amp; MS</p>"><span class="elora"></span>
+						</a>
+						<h4>MS Elora</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/ashes1.png" data-fancybox-title="<h5>Lilac</h5><p> Born March 2nd 2014 to CC MS Brady &amp; MS Elora</p>"><span class="ashes"></span>
+						</a>
+						<h4>RL MS CC Ashes</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/coraline1.png" data-fancybox-title="<h5>Lt. Dark Eyed Honey</h5><p> Born Sept 30th 2012 to MS &amp; MS</p>"><span class="coraline"></span>
+						</a>
+						<h4>MS Coraline</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/penny2.png" data-fancybox-title="<h5>Dark Eyed Honey</h5><p> Born December 7th 2013 to MS CC Milo &amp; MS Coraline</p>"><span class="penny"></span>
+						</a>
+						<h4>RL MS CC Penny</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/calvin1.png" data-fancybox-title="<h4>Nutmeg</h4><p> Born February 7th 2013 to CC Red Sonja &amp; ?</p>"><span class="calvin"></span>
+						</a>
+						<h4>CC GL Calvin</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/tetley1.png" data-fancybox-title="<h4>Spot Siamese</h5><p> Born February 19th 2014 to CC Cloud &amp; MS Athena</p>"><span class="tetley"></span>
+						</a>
+						<h4>RL MS CC Tetley</h4>
+						</div>
+					</div>
+
+				</div>
+	
+			<!-- GIRLS START-->
+
+				<div class="newboxes2" id="newboxes2" style="	display: block;">
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/priya1.png" data-fancybox-title="<h5>Siamese</h5><p> Born January 18th 2014 to CC Cloud &amp; MS Athena</p>"><span class="priya"></span>
+						</a>
+						<h4>RL MS CC Priya</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/violet1.png" data-fancybox-title="<h5>Pied Black</h5><p> Born December 16th 2013 to CC Cloud &amp; MS Athena</p>"><span class="violet"></span>
+						</a>
+						<h4>RL MS CC Violet</h4>
+						</div>
+					</div>
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/chai1.png" data-fancybox-title="<h5>Spot Siamese</h5><p> Born Feb 19th 2014 to CC Cloud &amp; MS Athena</p>"><span class="chai"></span>
+						</a>
+						<h4>RL MS CC Chai</h4>
+						</div>
+					</div>
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/piper1.png" data-fancybox-title="<h5>Lt. Dark Eyed Honey</h5><p> Born January 12th 2014 to CC MS Milo &amp; MS Coraline</p>"><span class="piper"></span>
+						</a>
+						<h4>RL MS CC Piper</h4>
+						</div>
+					</div>
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/athena1.png" data-fancybox-title="<h5>Burmese</h5><p> Born March 21st 2013 to MS Janus &amp; MS Rosemary</p>"><span class="athena"></span></a>
+						<h4>MS Athena</h4>
+						</div>
+					</div>
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/sepia1.png" data-fancybox-title="<h5>Nutmeg</h5><p> Born December 7th 2013 to MS CC Milo &amp; MS Coraline</p>"><span class="sepia"></span>
+						</a>
+						<h4>RL CC MS Sepia</h4>
+						</div>
+					</div>
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/lexus1.png" data-fancybox-title="<h5>Golden Agouti</h5><p> Born July 1st 2013 to GN Lincoln &amp; GN CC Porchia</p>"><span class="lexus"></span>
+						</a>
+						<h4>GN CC Lexus</h4>
+						</div>
+					</div>
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/kia1.png" data-fancybox-title="<h5>Black</h5><p> Born August 8th 2013 to GN Lincoln &amp; GN CC Porchia</p>"><span class="kia"></span>
+						</a>
+						<h4>GN CC Kia</h4>
+						</div>
+					</div>
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners girl-corners">
+							<a id="gerbilInfo" href="gerbils/arya1.png" data-fancybox-title="<h5>Ivory Cream</h5><p> Born March 2nd 2014 to CC MS Brady &amp; MS Elora</p>"><span class="arya"></span>
+						</a>
+						<h4>RL MS CC Arya</h4>
+						</div>
+					</div>
+
+				<!-- BOYS START-->
+
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/tazo1.png" data-fancybox-title="<h4>Pied Siamese</h4><p> Born February 19th 2014 to CC Cloud &amp; MS Athena</p>"><span class="tazo"></span>
+						</a>
+						<h4>RL MS CC Tazo</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/milo1.png" data-fancybox-title="<h4>Schimmel</h4><p> Born June 12th 2013 CC MS Vin Diesel &amp; CC MS The Wife</p>"><span class="milo"></span>
+						</a>
+						<h4>CC MS Milo</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/alpine1.png" data-fancybox-title="<h4>Silver Nutmeg</h4><p> Born July 25th 2013 to SOG GN Duke &amp; SOG CC Ginger</p>"><span class="alpine"></span>
+						</a>
+						<h4>SOG GN CC Alpine</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/vortex1.png" data-fancybox-title="<h4>Polar Fox</h4><p> Born June 27th 2013 to CWC Rodeo &amp; CWC Silver Blue</p>"><span class="vortex"></span>
+						</a>
+						<h4>SOG CWC Vortex</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/hiver1.png" data-fancybox-title="<h4>Colourpoint Grey Agouti</h4><p> Born May 8th 2013 to CWC Hachiro &amp; CWC Dazzel</p>"><span class="hiver"></span>
+						</a>
+						<h4>SOG CWC Hiver</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/phantom1.png" data-fancybox-title="<h4>Dark Tailed White</h4><p> Born June 2013 to ? &amp; ?</p>"><span class="phantom"></span>
+						</a>
+						<h4>RL Phantom</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/lucky1.png" data-fancybox-title="<h4>Schimmel</h4><p> Born January 12th, 2014 to CC MS Milo &amp; MS Coraline</p>"><span class="lucky"></span>
+						</a>
+						<h4>RL MS CC Lucky</h4>
+						</div>
+					</div>
+					<div class="mainGerbilInfo">
+						<div class="tucked-corners boy-corners">
+							<a id="gerbilInfo" href="gerbils/archer1.png" data-fancybox-title="<h4>Black</h4><p> Born January 21st 2014 to RG ABC Pierre &amp; GN CC Sephora</p>"><span class="archer"></span>
+						</a>
+						<h4>GN RG Archer</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="secondPanel">
+					<h3>Affiliations</h3>
+					<div class="secondPanelImgs">
+						<a href="http://www.caledoniagerbils.com"><img src="images/cctrans.png" alt="Logo of a cartoon gerbil in a yellow circle with the words Caledonia Clan Gerbils in the circle">Caledonia Clan Gerbils, Toronto</a>
+					</div>
+					<div class="secondPanelImgs">
+						<a href="http://agsgerbils.org/"><img src="images/agstrans.png" alt="Two gerbils peeking out of a red circle with the words American Gerbil Society.">American Gerbil Society</a>
+					</div>
+
+					<h3>Supplies</h3>
+
+					<div class="secondPanelImgs">
+						<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
+					</div>
+
+					<h3>Local Breeders</h3>
+
+					<div class="secondPanelImgs">
+						<a href="http://gerbilnation.wix.com/home">Gerbil Nation, Vaughan</a>
+					</div>
+
+					<div class="secondPanelImgs">
+						<a href="http://furrytalewarriors.wix.com/home">Furry Tail Warriors, Georgetown</a>
+					</div>	
+
+					<div class="secondPanelImgs">
+						<a href="http://50shadesofgerbil.weebly.com/">50 Shades of Gerbil, Belleville</a>
+					</div>		
+
+					<div>
+						<img src="images/tinyger1.png">	
+					</div>
+				</div>
+
+				<!----- MEDIA QUERY DIVS ------>
+
+				<div class="thirdPanel">
+		<div class="thirdPanelContainer">
+						<h3>Affiliations</h3>	
+						<div class="affiliations">		
+							<a href="http://agsgerbils.org/"><img src="images/agstrans.png" alt="Two gerbils peeking out of a red circle with the words American Gerbil Society.">American Gerbil Society</a>
+						</div>
+						<div class="affiliations">
+							<a href="http://www.caledoniagerbils.com"><img src="images/cctrans.png" alt="Logo of a cartoon gerbil in a yellow circle with the words Caledonia Clan Gerbils in the circle">Caledonia Clan Gerbils, Toronto</a>
+						</div>
+					</div>
+
+					<div class="thirdPanelContainer">
+						<h3>Breeders</h3>
+						<div class="breeders">
+							<a href="http://gerbilnation.wix.com/home">Gerbil Nation, Vaughan</a>
+						</div>
+						<div class="breeders">
+							<a href="http://furrytalewarriors.wix.com/home">Furry Tail Warriors, Georgetown</a>
+						</div>
+						<div class="breeders">
+							<a href="http://50shadesofgerbil.weebly.com/">50 Shades of Gerbil, Belleville</a>
+						</div>
+					</div>
+
+
+					<div class="thirdPanelContainer">
+						<h3>Supplies</h3>
+						<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
+					</div>
+
+
+				</div>
+
+<!--- MEDIA QUERY DIVS END ---->
+
+</div>
+
+<footer class="footerText">
+
+	<p>All images are &#169; Rock Lake Gerbils unless otherwise stated. Please do not use without permission.</p>
+
+	<p>Design &#169; <a href="mailto:fiona@feeona.ca">Fiona Martin</a> & Dana Halbert. Coded with &#9829; by <a href="mailto:fiona@feeona.ca">Fiona Martin</a></p>
+
+</footer>
+<script>
+	function slideonlyone(thechosenone) {
+		$('.newboxes2').each(function(index) {
+			if ($(this).attr("id") == thechosenone) {
+				$(this).show(600);
+			}
+			else {
+				$(this).hide(600);
+			}
+		});
+	}
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+<script>
+	$(document).ready(function() {
+
+		$("#gerbilInfo").fancybox({
+			helpers : {
+				overlay : {
+					closeClick : true,  // if true, fancyBox will be closed when user clicks on the overlay
+					speedOut   : 200,   // duration of fadeOut animation
+					showEarly  : true,  // indicates if should be opened immediately or wait until the content is ready
+					css        : {
+						background: 'rgba(255,255,255, 0.8)'
+					},    
+				},
+				title : {
+					type : 'inside' 
+
+				}
+			}
+		});
+	});
+</script>
+
+<script>
+$(document).ready(function() {
+	$('.weeMenu li').on('click',function(){
+	   $('.weeMenu li').removeClass('active2');
+	    $(this).addClass('active2');
+	});
+});
+</script>
+
+<script>$('body').flowtype();</script>
+</body>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Rock Lake Gerbils - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/RLGSS.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="description" content="The home page for Rock Lake Gerbils, which provides opening information about what the website is about.">
+	<link rel="shortcut icon" href="rlgico.ico">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400|Raleway|Lobster+Two:700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/flowtype.js"></script>
+	<meta charset="utf-8">
+	<meta name="generator" content="Wufoo">
+	<meta name="robots" content="index, follow">
+
+	<!-- CSS -->
+	<link href="css/structure.css" rel="stylesheet">
+	<link href="css/form.css" rel="stylesheet">
+	<link href="css/theme.css" rel="stylesheet">
+
+	<!-- JavaScript -->
+	<script src="scripts/wufoo.js"></script>
+
+	<!--[if lt IE 10]>
+	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+<script>
+	$(document).ready(function(){
+		$("#nav-mobile").html($("#nav-main").html());
+		$("#nav-trigger span").click(function(){
+			if ($("nav#nav-mobile ul").hasClass("expanded")) {
+				$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+				$(this).removeClass("open");
+			} else {
+				$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+				$(this).addClass("open");
+			}
+		});
+	});
+</script>
+
+
+<script type="text/javascript">
+	window.onload = function() {
+	  var options = document.form1.Field4.options;
+	  var clickedItem = String(window.location.href.match(/#item-[a-z]+/)).replace("#","");
+	  for(var i = 0; i < options.length; i++) {
+		options[i].selected = options[i].id == clickedItem;
+	  }
+	}
+</script>
+
+<style>
+	.firstPanel {
+	  border-bottom-right-radius: 0;
+	}
+	.secondPanel {
+	  border-bottom-left-radius: 10px;
+	}
+</style>
+</head>
+<body>
+
+	<div class="wrapper clearfix">
+
+		<div id="nav-trigger">
+			<span>menu</span>
+		</div>
+		<nav id="nav-main">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="clan.html">Our Clan</a></li>
+				<li><a href="available.html">Available</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<nav id="nav-mobile"></nav>
+
+		<img src="images/RLGlogo3.png" class="logoMobile" alt="">
+
+		<div class="textBanner">
+			<h1><strong>Rock Lake Gerbils</strong></h1>
+		</div>
+
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="clan.html">Our Clan</a></li>
+				<li><a href="available.html">Available</a></li>
+				<li><a href="contact.html" class="lastActive">Contact Us</a></li>
+				<li class="slider"></li>
+			</ul>
+		</nav>
+
+		<div class="firstPanel">
+			<div class="firstPanelContent">
+
+			<div class="newsFrame">
+				<div id="container" class="ltr">
+
+
+				<form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+				      action="https://feeona.wufoo.com/forms/z1xve7jt187o23g/#public">
+				  
+				<header id="header" class="info">
+				<h2>Contact Form</h2>
+				<div></div>
+				</header>
+
+				<ul>
+
+				<li id="foli11" class="notranslate      ">
+				<label class="desc" id="title11" for="Field11">
+				Name
+				<span id="req_11" class="req">*</span>
+				</label>
+				<span class="firstName">
+				<input id="Field11" name="Field11" type="text" class="field text fn" value="" tabindex="1" required />
+				<label for="Field11">First</label>
+				</span>
+				<span>
+				<input id="Field12" name="Field12" type="text" class="field text ln" value="" tabindex="2" required />
+				<label for="Field12">Last</label>
+				</span>
+				</li>
+				<li id="foli3" class="notranslate      ">
+				<label class="desc" id="title3" for="Field3">
+				Email
+				<span id="req_3" class="req">*</span>
+				</label>
+				<div>
+				<input id="Field3" name="Field3" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="3" required />
+				</div>
+				</li>
+				<li id="foli4" class="notranslate       ">
+				<label class="desc" id="title4" for="Field4">
+				Which gerbils would you like to enquire about?
+				</label>
+				<div>
+				<select id="Field4" name="Field4" class="field select large" tabindex="4" >
+				<option value="0" id="item-a" selected="selected">
+				None in particular
+				</option>
+<!-- 				<option value="1" id="item-b" >
+				Male - Nutmeg &amp; Schimmel Pair
+				</option> -->
+				<option value="2" id="item-c" >
+				Male - Pied Sapphire &amp; Pink Eyed White Pair
+				</option>
+				<option value="3" id="item-d" >
+				Male - Nutmeg &amp; Pink Eyed White Pair
+				</option>
+				<option value="4" id="item-e" >
+				Male - Nutmeg &amp; Agouti Pair
+				</option>
+				</select>
+				</div>
+				</li>
+				<li id="foli5" class="notranslate  notStacked     ">
+				<fieldset>
+				<![if !IE | (gte IE 8)]>
+				<legend id="title5" class="desc">
+				Have you owned gerbils before?
+				</legend>
+				<![endif]>
+				<!--[if lt IE 8]>
+				<label id="title5" class="desc">
+				Have you owned gerbils before?
+				</label>
+				<![endif]-->
+				<div>
+				<input id="radioDefault_5" name="Field5" type="hidden" value="" />
+				<span>
+				<input id="Field5_0" name="Field5" type="radio" class="field radio" value="Yes" tabindex="5" checked="checked" />
+				<label class="choice" for="Field5_0" >
+				Yes</label>
+				</span>
+				<span>
+				<input id="Field5_1" name="Field5" type="radio" class="field radio" value="No" tabindex="6" />
+				<label class="choice" for="Field5_1" >
+				No</label>
+				</span>
+				</div>
+				</fieldset>
+				</li>
+				<li id="foli6"
+				class="notranslate      "><label class="desc" id="title6" for="Field6">
+				Comments/Email
+				<span id="req_6" class="req">*</span>
+				</label>
+
+				<div>
+				<textarea id="Field6"
+				name="Field6"
+				class="field textarea medium"
+				spellcheck="true"
+				rows="10" cols="50"
+
+				tabindex="7"
+				onkeyup=""
+				required  ></textarea>
+
+				</div>
+				</li>
+				 <li class="submitMargin">
+				<div>
+				<button id="submit">Submit</button>
+				</div>
+				</li>
+
+				<li class="hide">
+				<label for="comment">Do Not Fill This Out</label>
+				<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+				<input type="hidden" id="idstamp" name="idstamp" value="o9H2RwKFQS34UF/ecVPtS1zL0cJ8bEOfgTf1r/FjuM8=" />
+				</li>
+				</ul>
+				</form> 
+
+				</div><!--container-->
+			</div>
+			</div>
+		</div>
+
+<div class="secondPanel">
+			<h3>Affiliations</h3>
+			<div class="secondPanelImgs">
+				<a href="http://www.caledoniagerbils.com"><img src="images/cctrans.png" alt="Logo of a cartoon gerbil in a yellow circle with the words Caledonia Clan Gerbils in the circle">Caledonia Clan Gerbils, Toronto</a>
+			</div>
+			<div class="secondPanelImgs">
+				<a href="http://agsgerbils.org/"><img src="images/agstrans.png" alt="Two gerbils peeking out of a red circle with the words American Gerbil Society.">American Gerbil Society</a>
+			</div>
+
+			<h3>Supplies</h3>
+
+			<div class="secondPanelImgs">
+				<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
+			</div>
+
+			<h3>Local Breeders</h3>
+
+			<div class="secondPanelImgs">
+				<a href="http://gerbilnation.wix.com/home">Gerbil Nation, Vaughan</a>
+			</div>
+
+			<div class="secondPanelImgs">
+				<a href="http://furrytalewarriors.wix.com/home">Furry Tail Warriors, Georgetown</a>
+			</div>	
+
+			<div class="secondPanelImgs">
+				<a href="http://50shadesofgerbil.weebly.com/">50 Shades of Gerbil, Belleville</a>
+			</div>		
+
+			<div>
+				<img src="images/tinyger1.png">	
+			</div>
+		</div>
+
+		<!----- MEDIA QUERY DIVS ------>
+
+		<div class="thirdPanel">
+<div class="thirdPanelContainer">
+				<h3>Affiliations</h3>	
+				<div class="affiliations">		
+					<a href="http://agsgerbils.org/"><img src="images/agstrans.png" alt="Two gerbils peeking out of a red circle with the words American Gerbil Society.">American Gerbil Society</a>
+				</div>
+				<div class="affiliations">
+					<a href="http://www.caledoniagerbils.com"><img src="images/cctrans.png" alt="Logo of a cartoon gerbil in a yellow circle with the words Caledonia Clan Gerbils in the circle">Caledonia Clan Gerbils, Toronto</a>
+				</div>
+			</div>
+
+			<div class="thirdPanelContainer">
+				<h3>Breeders</h3>
+				<div class="breeders">
+					<a href="http://gerbilnation.wix.com/home">Gerbil Nation, Vaughan</a>
+				</div>
+				<div class="breeders">
+					<a href="http://furrytalewarriors.wix.com/home">Furry Tail Warriors, Georgetown</a>
+				</div>
+				<div class="breeders">
+					<a href="http://50shadesofgerbil.weebly.com/">50 Shades of Gerbil, Belleville</a>
+				</div>
+			</div>
+
+
+			<div class="thirdPanelContainer">
+				<h3>Supplies</h3>
+				<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
+			</div>
+
+
+		</div>
+
+		<!--- MEDIA QUERY DIVS END ---->
+
+	</div>
+
+	<footer class="footerText">
+
+		<p>All images are &#169; Rock Lake Gerbils unless otherwise stated. Please do not use without permission.</p>
+
+		<p>Design &#169; <a href="mailto:fiona@feeona.ca">Fiona Martin</a> & Dana Halbert. Coded with &#9829; by <a href="mailto:fiona@feeona.ca">Fiona Martin</a></p>
+
+	</footer>
+
+
+	<script>$('body').flowtype();</script>
+</body>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Rock Lake Gerbils - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/RLGSS.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="description" content="The home page for Rock Lake Gerbils, which provides opening information about what the website is about.">
+	<link rel="shortcut icon" href="rlgico.ico">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400|Raleway|Lobster+Two:700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/flowtype.js"></script>
+
+</head>
+
+<script>
+	$(document).ready(function(){
+		$("#nav-mobile").html($("#nav-main").html());
+		$("#nav-trigger span").click(function(){
+			if ($("nav#nav-mobile ul").hasClass("expanded")) {
+				$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+				$(this).removeClass("open");
+			} else {
+				$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+				$(this).addClass("open");
+			}
+		});
+	});
+</script>
+
+
+<body>
+<script></script>
+
+	<div class="wrapper clearfix">
+
+		<div id="nav-trigger">
+			<span>menu</span>
+		</div>
+		<nav id="nav-main">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="clan.html">Our Clan</a></li>
+				<li><a href="available.html">Available</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<nav id="nav-mobile"></nav>
+
+		<img src="images/RLGlogo3.png" class="logoMobile" alt="">
+
+		<div class="textBanner">
+			<h1><strong>Rock Lake Gerbils</strong></h1>
+		</div>
+
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="faq.html" class="active">FAQ</a></li>
+				<li><a href="clan.html">Our Clan</a></li>
+				<li><a href="available.html">Available</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li class="slider"></li>
+			</ul>
+		</nav>
+
+		<div class="firstPanel">
+			<div class="firstPanelContent">
+				
+				<h2 id="goToTop">Frequently Asked Questions</h2>
+
+				<nav>
+					<ul class="menu faqMenu">
+					<li><a href="#habitat">Habitat</a></li>
+					<li><a href="#food">Food</a></li>
+					<li><a href="#habits">Habits</a></li>
+					<li><a href="#care">Care</a></li>
+					<li><a href="#general">General</a></li>
+					<li><a href="#adoptions">Adoptions</a></li>
+					<li class="slider"></li>
+				</ul>
+			</nav>
+				
+				
+				<section class="ac-container">
+				    <div id="habitat">
+				        <input id="ac-1" name="accordion-1" type="checkbox" />
+				        <label for="ac-1">What kind of habitat do gerbils live in?</label>
+				        <article class="ac-large">
+				            <p>Gerbils should be living in a glass aquarium with a mesh lid. Cages are not recommended for them as they are chewers and diggers and can also become obsessive with their chewing. Most cages also have plastic bases which are too short for ample digging room. As well, plastic is unsafe for gerbils as they will chew through it.</p>
+
+				            <p>20g tanks (long or high) is our recommended minimum for a pair of adult gerbils.</p>
+
+				            <p>There is also the option of a tank-topper, or a cage-topper. This is a cage that sits on top of the aquarium that can allow the gerbil to go up above and play in an upper cage level. Some gerbils may or may not chew the bars of the cage, but generally as long as they have a large amount of bedding in the bottom of the tank they won’t feel bored and inclined to chewing the wires. We do not use cage toppers but have seen others successfully use them. </p>
+				            <div class="faqImges">
+				            	<div class="faq3Images">
+				            		<img src="images/20ghigh.jpg" alt="">
+				            	</div>
+				            	<div class="faq3Images">
+				            		<img src="images/CFT-10.jpg" alt="">
+				            	</div>
+				            	<div class="faq3Images">
+				            		<img src="images/20glong.jpg" alt="">
+				            	</div>
+				            </div>
+
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-2" name="accordion-1" type="checkbox" />
+				        <label for="ac-2">What can I put in with my gerbils? Do they need wheels or food dishes?</label>
+				        <article class="ac-large2">
+				            <p>Gerbils do not need food dishes (unless you are using a cage topper; in which you can place it on the caged upper level). Gerbils are natural foragers and simply sprinkling the food on top of the bedding is good enough for them. They’ll take the food and stash it, some just bury it. It is possible gerbils will use the small dish as a toilet rather then a food dish.</p>
+
+							<p>Wheels aren’t necessary but can be added at the owners discretion. However, they must be metal with small enclosed mesh or a heavy plastic. The enclosed mesh ensures their tails cannot get through and get caught. Heavy plastic so the gerbils cannot chew it. </p>
+							<div class="faqImges clearfix">
+								<div class="faq2Images">
+									<img src="images/7998.jpg" alt="">
+								</div>
+								<div class="faq2Images">
+									<img src="images/ip861414_2.jpg" alt="">
+								</div>
+							</div>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-3" name="accordion-1" type="checkbox" />
+				        <label for="ac-3">What type of bedding do gerbils use?</label>
+				        <article class="ac-medium">
+				            <p>Gerbils can use aspen wood chips, corncobs and soft paper bedding called Carefresh. Never put gerbils on pine or cedar wood chips. It is too strong for their noses and can cause respiratory infections and allergies. </p>
+							<p>Our recommendation is to use aspen wood shavings or chips. The shavings last longer, cause the least amount of allergies and do not smell as quickly. It is also great for their tunnelling and packs well, so their intricate habitat stands on it’s own. We purchase our bedding from an online Canadian supplier, <a href="http://www.chinchilla.ca">Flower Town Chinchilla</a>.</p>
+							<div class="faqImges">
+								<div class="faq3Images">
+									<img src="images/NAB90.jpg" alt="">
+								</div>
+								<div class="faq3Images">
+									<img src="images/colorful_ballerina_tutus_dressup.jpg" alt="">
+								</div>
+								<div class="faq3Images">
+									<img src="images/aspenpic.jpg" alt="">
+								</div>
+							</div>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-5" name="accordion-1" type="checkbox" />
+				        <label for="ac-5">How do I set up my gerbil’s habitat?</label>
+				        <article class="ac-small">
+				            <p>There is not a lot to setting up a gerbil’s habitat. The most important is a lot of bedding. In a 20g tank you can put as much as 6-8 inches of bedding for your gerbils to enjoy. A glass water bottle is a must as there should be no plastic in the tank. You will also need a metal water bottle holder made for glass aquariums that can be purchased at any PetSmart. Make sure the water bottle is at an accessible height and in access at all times. Be sure to check it often as gerbils have the tendency to bury the water bottle nozzles and this can lead to leaking.</p>
+							<p>Hanging water bottles from the top of the tank using small electrical zip ties (you can also cut small holes in the top of the mesh; it’s completely safe and the gerbils cannot escape) that way it is less likely for the gerbils to bury their water bottle.</p>
+				        </article>
+				    </div>
+				    <div class="faqSpace">
+				        <input id="ac-6" name="accordion-1" type="checkbox" />
+				        <label for="ac-6">What other safe accessories can gerbils have in their habitat?</label>
+				        <article class="ac-medium2">
+				            <p>Gerbils can have almost anything that does not involve plastic. Do not purchase any plastic accessories from a petstore as it is not good for their health. Any wood, paper or cardboard accessories are fine. We often recommend recyclable boxes such as tissue boxes, cracker boxes, cereal boxes and the like. You cannot put in drink cartons however, as the plastic coating on the inside is not good for them.</p>
+
+							<p>Anything wood, such as chewable sticks, blocks or structures are particularly excellent as it good for their teeth to have something more solid to chew on.</p>
+							<div class="faqImges">
+								<div class="faq3Images">
+									<img src="images/pPETNA-5208962_main_t300x300.jpg" alt="">
+								</div>
+								<div class="faq3Images">
+									<img src="images/pPETNA-5163381_main_enh.jpg" alt="">
+								</div>
+								<div class="faq3Images">
+									<img src="images/pPETNA-5172069_main_t300x300.jpg" alt="">
+								</div>
+							</div>
+				        </article>
+				    </div>
+		
+				    <div id="food">
+				        <input id="ac-7" name="accordion-1" type="checkbox" />
+				        <label for="ac-7">What kind of food to gerbils eat?</label>
+				        <article class="ac-large3">
+				            <p>Gerbils can eat seed mixes, lab blocks and variants of fresh food.
+				            </p>
+							<p>We feed our gerbils a 50-50 split of seed (67% Hagen Hamster and Gerbil and 33% Hagen Premium Hamster and Gerbil) and lab blocks (14% to 16% protein). Any seed mix is fine as long as it has the following nutrition facts: 12%-14% protein, 6%-8% fat and ideally corn not being one of the first six ingredients on the packaging.
+							</p>
+							<p>Oxbow can also be a replacement to the lab blocks if you are unable to purchase them.</p>
+ 							<p>We purchase our seed mixes at Petsmart (it is a common brand and most likely found at any local petstore) and our lab blocks are purchased from an online Canadian supplier, Flower Town Chinchilla (www.chinchilla.ca).</p>
+							<p>We also give gerbils a handful of Timothy Hay every week which they love and is great for their health and teeth. </p>
+							<div class="faqImges">
+								<div class="faq3Images">
+									<img src="images/10300699_705078872869317_2713772675124689572_n.jpg" alt="">
+								</div>
+								<div class="faq3Images">
+									<img src="images/91rIqn8dSZL._SL1500_.jpg" alt="">
+								</div>
+								<div class="faq3Images">
+									<img src="images/10264606_705079042869300_5216703547326016990_n.jpg" alt="">
+								</div>
+							</div>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-8" name="accordion-1" type="checkbox" />
+				        <label for="ac-8">How much and how often do I feed my gerbils?</label>
+				        <article class="ac-small2">
+				            <p>Gerbils should be fed every two days. The amount to feed is 10 grams per gerbil, per day.  For two gerbils fed every second day, it would be approximately 3 tablespoons.</p>
+							<p>If you feed your gerbils seeds and lab block mix (or Oxbow) we will do 10 grams of seed and 10 grams of lab block/Oxbow mix. This can be measured using a small kitchen scale.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-9" name="accordion-1" type="checkbox" />
+				        <label for="ac-9">What kinds of treats are safe for my gerbils?</label>
+				        <article class="ac-small3">
+				            <p>Banana chips, cheerios, and raw, unsalted nuts such as pumpkin seeds, sunflower seeds, Brazilian nuts and walnuts can all be used as treats. </p>
+				            <p>Fresh fruit and vegetables can be given, however you must remove the uneaten pieces after a few hours to ensure they don’t get buried and rot in the bedding.</p>
+							<p>Gerbils can also eat meal worms and crickets.</p>
+							<p>Safe fruits and vegetables: apple (seedless), carrots, cucumber, parsley, broccoli, cauliflower.</p>
+				        </article>
+				    </div>
+				    <div class="faqSpace">
+				        <input id="ac-10" name="accordion-1" type="checkbox" />
+				        <label for="ac-10">What should I avoid feeding my gerbils?</label>
+				        <article class="ac-small2">
+				            <p>Do not feed your gerbils anything that contains too high of a water content as it can give them diarrhea, as well anything too sugary can cause health issues. Onions and garlic are also bad for gerbils.</p>
+				        </article>
+				    </div>
+
+				    <div id="habits">
+				        <input id="ac-11" name="accordion-1" type="checkbox" />
+				        <label for="ac-11">Do gerbils bite?</label>
+				        <article class="ac-small2">
+				            <p>Gerbils almost never bite, however like any small creature with teeth they can if they feel threatened. They are not avid nippers like hamsters and as long as they are approached with ease and not handled improperly they will not bite. They may softly nip at your finger if they smell food and think you have something. To avoid this, make sure you wash your hands before (and after) handling your gerbils.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-12" name="accordion-1" type="checkbox" />
+				        <label for="ac-12">My gerbils look like they are having a fight, what does this mean?</label>
+				        <article class="ac-small2">
+				            <p>Gerbils are extremely social and rely on a leader-follower type lifestyle. It is possible that your gerbils are just having a small argument and are sorting out (or reconfirming) who is the leader in the tank. It is nothing to be worried about as long as there is no blood involved.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-13" name="accordion-1" type="checkbox" />
+				        <label for="ac-13">I haven’t seen my gerbils in a few days, is there something wrong?</label>
+				        <article class="ac-small2">
+				            <p>Not at all! Gerbils who have lots of bedding sometimes stay ‘underground’ for a long time. This generally depends on the gerbil as some like to come up to the top more often. If you are concerned, you can gentle shuffle at the shaving to get their attention and call them to the top of the tank.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-14" name="accordion-1" type="checkbox" />
+				        <label for="ac-14">My gerbils sometimes make a thumping noise, what are they doing?</label>
+				        <article class="ac-small2">
+				            <p>Thumping is a warning sign used to communicate with other gerbils. If they are spooked at anything (it can often be for silly reasons, such as simply walking by the tank or accidentally making a loud noise) they thump their foot to alert the other clan members. This is nothing to worry about and once the gerbil feels safe the thumping will stop.</p>
+				        </article>
+				    </div>
+				    <div class="faqSpace">
+				        <input id="ac-15" name="accordion-1" type="checkbox" />
+				        <label for="ac-15">What does it mean when I hear my gerbils squeak?</label>
+				        <article class="ac-small2">
+				            <p>Squeaking is one of the ways gerbils communicate. It is common for most gerbils to squeak every now and then, but it depends on each one. Some are louder then others. </p>
+				        </article>
+				    </div>
+
+				    <div id="care">
+				    <div>
+				        <input id="ac-16" name="accordion-1" type="checkbox" />
+				        <label for="ac-16">How do I handle a gerbil?</label>
+				        <article class="ac-small2">
+				            <p>Be sure to wash your hands before handling your gerbil. Never pick them up by the tail. Gerbils that are comfortable with your hand will often crawl right on top of your hand; you would be able to pick them up like that. If you gerbils are not comfortable yet with coming on to your hand, you can take two hands and gentle cup them. Try not to do it too quickly as you do not want to spook your gerbil. They are prone to jumping when scared, so cupping them gentle in your hand will ensure they will not jump out.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-17" name="accordion-1" type="checkbox" />
+				        <label for="ac-17">How can I interact with my gerbil and gain it’s trust?</label>
+				        <article class="ac-small2">
+				            <p>You can interact with your gerbil by treats. Place some treats in your palm and place it flat and open on top of the bedding. Your gerbils may take their time to come to your hand, but once they do be careful not to move it. This will teach them that your hand is great as it’s associated with yummy treats! The more you do this, the more your gerbil will understand that your hand isn’t a scary or harmful thing.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-18" name="accordion-1" type="checkbox" />
+				        <label for="ac-18">Can gerbils be taken outside of their habitat?</label>
+				        <article class="ac-small2">
+				            <p>If you take one out of the habitat without the other, do not separate them for a longer period of time than necessary, if playing not more than 15 or 20 minutes. Separating your gerbils for too long of periods can cause de-clanning and you will not be able to put them together without properly reintroducing them.</p>
+				        </article>
+				    </div>
+				    <div class="faqSpace">
+				        <input id="ac-19" name="accordion-1" type="checkbox" />
+				        <label for="ac-19">Are plastic hamster balls necessary?</label>
+				        <article class="ac-small2">
+				            <p>They aren’t necessary, however if you do wish do have your gerbils run around in a hamster ball just be careful not to keep them separated for too long. Like any small animal, be careful to make a safe area for your gerbil to use the ball so they do not fall down stairs or get stuck in places they are unable to get out.</p>
+							<p>The AGS often runs gerbil races at their shows using ham-tracks. They can be purchased in some pet stores.</p>
+				        </article>
+				    </div>
+
+				    <div id="general">
+				    <div>
+				        <input id="ac-20" name="accordion-1" type="checkbox" />
+				        <label for="ac-20">What colour do gerbils come in?</label>
+				        <article class="ac-small2">
+				            <p>Gerbils come in a variety of colours. The two biggest categories for gerbils are called “self” and “white belly”. Self gerbils means they are all one colour (such as black). White belly is as it’s said, no matter what colour they are on top on the bottom they are white (such as agouti). About half of all the gerbil colours are self and the other half are white belly. Gerbils can have both red and black eyes.</p>
+							<p><a href="http://www.thegerbils.com/colors1.htm">Here</a> is a great website to see just how many different colours gerbils can come in.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-21" name="accordion-1" type="checkbox" />
+				        <label for="ac-21">Where do gerbils come from?</label>
+				        <article class="ac-small2">
+				            <p>Gerbils originate from Mongolia; sometimes they are referred to as the Mongolian Gerbil. They are desert animals and live in the sand in the wild which is where they get their natural digging and tunneling abilities from!</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-22" name="accordion-1" type="checkbox" />
+				        <label for="ac-22">What kind of health concerns to gerbils have?</label>
+				        <article class="ac-medium">
+				            <p>Gerbils do not have tons of health concerns, although the most common are allergies and respiratory infection. Allergies can come from the type of bedding they are on. The sign of this is a very red nose. The best thing you can do is move them off their current bedding and on to paper towel until the irritation goes down; then you can move them back on a different bedding. Not very often do we find gerbils develop allergies on aspen bedding.</p>
+							<p>Respiratory infection is easily noticed by a clicking or popping noise when they breath. Gerbils should be silent while breathing and if you hear anything out of the ordinary you are advised to take them to a vet. There they can give you medication and proper treatment and tips to help your gerbil with their RI.</p>
+							<p>Gerbils with red eyes also often have a bit of a “sway” when they stand; this is because their perception is not as good as black eyed gerbils. This is common and nothing to worry about, but it should not be confused with a gerbil that tilts it’s head to the side and walks in a circle or “lop-sided”. This is a symptom of an ear infection and they should be taken to the vet to get treatment.</p>
+							<p>It is important to do your research about gerbils and their health concerns. If you feel anything seems off with your gerbil, be sure to bring them to a vet to get checked out.</p>
+				        </article>
+				    </div>
+				    <div class="faqSpace">
+				        <input id="ac-23" name="accordion-1" type="checkbox" />
+				        <label for="ac-23">How long do gerbils live?</label>
+				        <article class="ac-small4">
+				            <p>On average gerbils live to be 3 years old, but with proper care and a good healthy genetic line they can live to be up to 5 years.</p>
+				        </article>
+				    </div>
+
+				    <div id="adoptions">
+				    <div>
+				        <input id="ac-24" name="accordion-1" type="checkbox" />
+				        <label for="ac-24">Do you deliver?</label>
+				        <article class="ac-small2">
+				            <p>We do, within the GTA for a delivery fee. This will depend on where you are. We encourage our potential adopters to come out and see our clan and for a chat! If you are looking for a delivery, please contact us ahead of time for arrangements.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-25" name="accordion-1" type="checkbox" />
+				        <label for="ac-25">How young do you home your gerbils?</label>
+				        <article class="ac-small4">
+				            <p>We do not home our gerbils any earlier then 6 weeks. If you are taking a pup (or two) for introducing to a lone adult, 5 weeks is acceptable as well.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-26" name="accordion-1" type="checkbox" />
+				        <label for="ac-26">Do you sell gerbils to other breeders?</label>
+				        <article class="ac-small4">
+				            <p>We only sell our gerbils for breeding purposes to other AGS registered breeders. This is because we breed for and from champion and show lines as well as health and colours.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-27" name="accordion-1" type="checkbox" />
+				        <label for="ac-27">Will you sell a single gerbil?</label>
+				        <article class="ac-small2">
+				            <p>Not unless prior arrangements are made to pair a single pup with a lone gerbil. We provide a safe way to introduce your lone gerbil to a pup if needed. Otherwise our gerbils are only sold in pairs, trios or quartets.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-28" name="accordion-1" type="checkbox" />
+				        <label for="ac-28">I have a lone gerbil, how do I introduce them?</label>
+				        <article class="ac-small2">
+				            <p>Gerbils are introduced using a “split tank” method. This is done by splitting a tank with a metal channel and using a piece of mesh between to section off half the tank. This allows the gerbils to smell each other and become acquainted at a safe distance without being able to get in contact in case there is a fight.</p>
+				            <p>If you are looking to do an introduction, we are able to do them for you. Just contact us if you need any help!</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-29" name="accordion-1" type="checkbox" />
+				        <label for="ac-29">
+						I adopted gerbils from you and I can no longer keep them, what do I do?</label>
+				        <article class="ac-small2">
+				            <p>We would prefer if you returned them to us in their tank so we can put them back up for adoption. We will not accept a gerbil pair back in anything other then a tank. Please don’t be afraid to contact us if something like this comes up! We will gladly work with you through it and arrange something.</p>
+				        </article>
+				    </div>
+				    <div>
+				        <input id="ac-30" name="accordion-1" type="checkbox" />
+				        <label for="ac-30">
+						I’m going on vacation, what do I do with my gerbils?</label>
+				        <article class="ac-small2">
+				            <p>If you are going away for a weekend, your gerbils should be fine as long as you give them enough food for the few days you are gone. Also be sure to change the water before you go as well.</p>
+							<p>We will offer a ‘gerbil sitting’ service for free to our adopters. Just bring your gerbils in their habitat with their food and we will happily look after them for you. </p>
+				        </article>
+				    </div>
+				    <div><!--...--></div>
+				</section>
+
+				<a href="#goToTop" class="goToTop"> Go to top </a>
+				
+				
+
+			</div>
+		</div>
+
+<div class="secondPanel">
+			<h3>Affiliations</h3>
+			<div class="secondPanelImgs">
+				<a href="http://www.caledoniagerbils.com"><img src="images/cctrans.png" alt="Logo of a cartoon gerbil in a yellow circle with the words Caledonia Clan Gerbils in the circle">Caledonia Clan Gerbils, Toronto</a>
+			</div>
+			<div class="secondPanelImgs">
+				<a href="http://agsgerbils.org/"><img src="images/agstrans.png" alt="Two gerbils peeking out of a red circle with the words American Gerbil Society.">American Gerbil Society</a>
+			</div>
+
+			<h3>Supplies</h3>
+
+			<div class="secondPanelImgs">
+				<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
+			</div>
+
+			<h3>Local Breeders</h3>
+
+			<div class="secondPanelImgs">
+				<a href="http://gerbilnation.wix.com/home">Gerbil Nation, Vaughan</a>
+			</div>
+
+			<div class="secondPanelImgs">
+				<a href="http://furrytalewarriors.wix.com/home">Furry Tail Warriors, Georgetown</a>
+			</div>	
+
+			<div class="secondPanelImgs">
+				<a href="http://50shadesofgerbil.weebly.com/">50 Shades of Gerbil, Belleville</a>
+			</div>		
+
+			<div>
+				<img src="images/tinyger1.png">	
+			</div>
+		</div>
+
+		<!----- MEDIA QUERY DIVS ------>
+
+		<div class="thirdPanel">
+			<div class="thirdPanelContainer">
+				<h3>Affiliations</h3>	
+				<div class="affiliations">		
+					<a href="http://agsgerbils.org/"><img src="images/agstrans.png" alt="Two gerbils peeking out of a red circle with the words American Gerbil Society.">American Gerbil Society</a>
+				</div>
+				<div class="affiliations">
+					<a href="http://www.caledoniagerbils.com"><img src="images/cctrans.png" alt="Logo of a cartoon gerbil in a yellow circle with the words Caledonia Clan Gerbils in the circle">Caledonia Clan Gerbils, Toronto</a>
+				</div>
+			</div>
+
+			<div class="thirdPanelContainer">
+				<h3>Breeders</h3>
+				<div class="breeders">
+					<a href="http://gerbilnation.wix.com/home">Gerbil Nation, Vaughan</a>
+				</div>
+				<div class="breeders">
+					<a href="http://furrytalewarriors.wix.com/home">Furry Tail Warriors, Georgetown</a>
+				</div>
+				<div class="breeders">
+					<a href="http://50shadesofgerbil.weebly.com/">50 Shades of Gerbil, Belleville</a>
+				</div>
+			</div>
+
+
+			<div class="thirdPanelContainer">
+				<h3>Supplies</h3>
+				<a href="http://www.chinchilla.ca/"><img src="images/ftctrans.png" alt="Picture of various rodents, a ferret is paining on a sign that reads 'Flower Town Chinchillas">FlowerTown Chinchillas, Brampton</a>
+			</div>
+
+
+		</div>
+
+		<!--- MEDIA QUERY DIVS END ---->
+
+	</div>
+
+	<footer class="footerText">
+
+		<p>All images are &#169; Rock Lake Gerbils unless otherwise stated. Please do not use without permission.</p>
+
+		<p>Design &#169; <a href="mailto:fiona@feeona.ca">Fiona Martin</a> & Dana Halbert. Coded with &#9829; by <a href="mailto:fiona@feeona.ca">Fiona Martin</a></p>
+
+	</footer>
+
+<script>$('body').flowtype();</script>
+
+
+
+</body>
+
+
+</html>

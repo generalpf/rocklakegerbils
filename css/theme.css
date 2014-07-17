@@ -1,0 +1,423 @@
+/* ----- Logo ----- */
+
+h1#logo a {
+	background-image:url('http://www.rocklakegerbils.com/images/RLGlogo4.png'); 
+	min-height:0;
+	height:150px;
+}
+* html h1#logo a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.rocklakegerbils.com../images/RLGlogo4.png", sizingMethod="crop");
+}
+
+/* ----- Backgrounds ----- */
+
+.wufoo .instruct{
+	background-color:#f7f7f7;
+}
+
+/* ----- Borders ----- */
+#container{
+	border:0 solid #cccccc;
+}
+.wufoo .section h3, .wufoo .captcha, #payment .paging-context{
+	border-top:1px solid #242424;
+}
+.wufoo input.text, .wufoo textarea.textarea{
+
+}
+.wufoo .instruct{
+	border:1px solid #e6e6e6;
+}
+.fixed .info{
+	border-bottom:none;
+}
+.wufoo li.section.scrollText{
+	border-color:#dedede;
+}
+
+/* ----- Typography ----- */
+.wufoo .info h2{
+	font-size:2.5em;
+	font-family: 'Lobster Two', cursive;
+	font-style:normal;
+	font-weight:normal;
+	color:#3f596a;
+}
+.wufoo .info div{
+	font-size:95%;
+	font-family:inherit;
+	font-style:normal;
+	font-weight:normal;
+	color:#444444;
+}
+.wufoo .section h3{
+	font-size:110%;
+	font-family:inherit;
+	font-style:normal;
+	font-weight:normal;
+	color:#000000;
+}
+.wufoo .section div{
+	font-size:85%;
+	font-family:inherit;
+	font-style:normal;
+	font-weight:normal;
+	color:#444444;
+}
+
+.wufoo label.desc, .wufoo legend.desc{
+	font-size:95%;
+	font-family: 'Raleway', sans-serif;
+	font-style:normal;
+	font-weight:bold;
+	color:#444444;
+}
+
+.wufoo label.choice{
+	font-size:100%;
+	font-family:inherit;
+	font-style:normal;
+	font-weight:normal;
+	color:#444444;
+}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select{
+	font-style:normal;
+	font-weight:normal;
+	color:#333333;
+	font-size:100%;
+}
+{* Custom Fonts Break Dropdown Selection in IE *}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file{ 
+	font-family:inherit;
+}
+
+
+.wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label{
+	font-family:inherit;
+	color:#444444;
+}
+.safari .wufoo input.file{ /* Webkit */
+	font-size:100%;
+	font-family:inherit;
+	color:#444444;
+}
+.wufoo .instruct small{
+	font-size:80%;
+	font-family:inherit;
+	font-style:normal;
+	font-weight:normal;
+	color:#444444;
+}
+
+.altInstruct small, li.leftHalf small, li.rightHalf small,
+li.leftThird small, li.middleThird small, li.rightThird small,
+.iphone small{
+	color:#444444 !important;
+}
+
+.submitMargin {
+	margin: 20px 0;
+}
+
+form ul li span input, div input.large, div select.large  {
+		width: 100%;
+}
+
+.wutoo input.text {
+	font-size: 20px;
+}
+
+#Field3, #Field11, #Field12  {
+	padding: 10px 0;
+	font-size: 25px;
+}
+
+.firstName {
+	margin-right: 1.8%;
+}
+
+/* ----- Button Styles ----- */
+
+#submit {
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 2px #3f596a;
+  box-shadow: 0 0 0 2px #3f596a;
+  border: 0;
+  height: 40px;
+  line-height: 36px;
+  width: 120px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #3f596a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+#submit:hover {
+  background: #D3DEE6;
+  color: #fff;
+}
+#submit.pro {
+  background-color: #b5b5b5;
+  background-image: url("http://andreasstorm.com/lib/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-box-shadow: 0 0 0 2px #b5b5b5;
+  box-shadow: 0 0 0 2px #b5b5b5;
+  color: #fff;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+#submit.finish {
+  background: #4cd964;
+  -webkit-box-shadow: 0 0 0 2px #4cd964;
+  box-shadow: 0 0 0 2px #4cd964;
+  -webkit-transition: background-color, border-color 0.2s ease;
+  -moz-transition: background-color, border-color 0.2s ease;
+  -o-transition: background-color, border-color 0.2s ease;
+  -ms-transition: background-color, border-color 0.2s ease;
+  transition: background-color, border-color 0.2s ease;
+}
+#submit.finish:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  border-bottom: 4px #fff solid;
+  border-left: 4px #fff solid;
+  z-index: 9999;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: -7px 0px 0px 44px;
+  -webkit-animation: fade 0.8s ease forwards;
+  -moz-animation: fade 0.8s ease forwards;
+  -o-animation: fade 0.8s ease forwards;
+  -ms-animation: fade 0.8s ease forwards;
+  animation: fade 0.8s ease forwards;
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+
+/* ----- Highlight Styles ----- */
+
+.wufoo li.focused label.desc, .wufoo li.focused legend.desc,
+.wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label,
+.safari .wufoo li.focused input.file{ 
+	color:#000000;
+}
+
+/* ----- Confirmation ----- */
+
+.confirm h2{
+	font-family:inherit;
+	color:#444444;
+}
+a.powertiny b, a.powertiny em{
+	color:#1a1a1a !important;
+}
+.embed a.powertiny b, .embed a.powertiny em{
+	color:#1a1a1a !important;
+}
+
+/* ----- Pagination ----- */
+
+.pgStyle1 var, .pgStyle2 var, .pgStyle2 em, .page1 .pgStyle2 var, .pgStyle1 b, .wufoo .buttons .marker{
+	font-family:inherit;
+	color:#444444;
+}
+.pgStyle1 var, .pgStyle2 td{
+	border:1px solid #cccccc;
+}
+.pgStyle1 .done var{
+	background:#cccccc;
+}
+
+.pgStyle1 .selected var, .pgStyle2 var, .pgStyle2 var em{
+	background:#FFF7C0;
+	color:#000000;
+}
+.pgStyle1 .selected var{
+	border:1px solid #e6dead;
+}
+
+
+/* Likert Backgrounds */
+
+.likert table{
+	background-color:#FFFFFF;
+}
+.likert thead td, .likert thead th{
+	background-color:#e6e6e6;
+}
+.likert tbody tr.alt td, .likert tbody tr.alt th{
+	background-color:#f5f5f5;
+}
+
+/* Likert Borders */
+
+.likert table, .likert th, .likert td{
+	border-color:#dedede;
+}
+.likert td{
+	border-left:1px solid #cccccc;
+}
+
+/* Likert Typography */
+
+.likert caption, .likert thead td, .likert tbody th label{
+	color:#444444;
+	font-family:inherit;
+}
+.likert tbody td label{
+	color:#575757;
+	font-family:inherit;
+}
+.likert caption, .likert tbody th label{
+	font-size:95%;
+}
+
+/* Likert Hover */
+
+.likert tbody tr:hover td, .likert tbody tr:hover th, .likert tbody tr:hover label{
+	background-color:#FFF7C0;
+	color:#000000;
+}
+.likert tbody tr:hover td{
+	border-left:1px solid #ccc69a;
+}
+
+/* ----- Running Total ----- */
+
+.wufoo #lola{
+	background:#e6e6e6;
+}
+.wufoo #lola tbody td{
+	border-bottom:1px solid #cccccc;
+}
+.wufoo #lola{
+	font-family:inherit;
+	color:#444444;
+}
+.wufoo #lola tfoot th{
+	color:#696969;
+}
+
+/* ----- Report Styles ----- */
+
+.wufoo .wfo_graph h3{
+	font-size:95%;
+	font-family:inherit;
+	color:#444444;
+}
+.wfo_txt, .wfo_graph h4{
+	color:#444444;
+}
+.wufoo .footer h4{
+	color:#000000;
+}
+.wufoo .footer span{
+	color:#444444;
+}
+
+/* ----- Number Widget ----- */
+
+/* ----- Chart Widget Border and Background Colors ----- */
+
+/* ----- Chart Widget Typography Colors ----- */
+
+/* ----- Chart Widget Hover Colors ----- */
+
+/* ----- Payment Summary ----- */
+
+
+/* Drop Shadows */
+#container{
+	-webkit-box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-o-box-shadow:none !important;
+	box-shadow:none !important;
+}
+
+/* - - - Local Fonts - - - */
+
+/* - - - Responsive - - - */
+
+ @media screen and (max-width: 420px) {
+
+ 	form ul li span {
+ 		float: none;
+ 		margin: 0;
+		width: 100%;
+ 	}
+ }
+
+/* - - - Custom Theme - - - */
+
